@@ -38,7 +38,7 @@ import {
   ShopInboxPage,
 } from "./routes/ShopRoutes";
 import {
-  AdminDashboardPage,
+  AdminDashboardPage, 
   AdminDashboardUsers,
   AdminDashboardSellers,
   AdminDashboardOrders,
@@ -266,6 +266,7 @@ const App = () => {
             <ProtectedAdminRoute>
               <AdminDashboardPage />
             </ProtectedAdminRoute>
+              
           }
         />
         <Route
@@ -274,6 +275,7 @@ const App = () => {
             <ProtectedAdminRoute>
               <AdminDashboardUsers />
             </ProtectedAdminRoute>
+           
           }
         />
         <Route
@@ -282,6 +284,7 @@ const App = () => {
             <ProtectedAdminRoute>
               <AdminDashboardSellers />
             </ProtectedAdminRoute>
+            
           }
         />
         <Route
@@ -290,6 +293,7 @@ const App = () => {
             <ProtectedAdminRoute>
               <AdminDashboardOrders />
             </ProtectedAdminRoute>
+            
           }
         />
          <Route
@@ -298,6 +302,7 @@ const App = () => {
             <ProtectedAdminRoute>
               <AdminDashboardProducts />
             </ProtectedAdminRoute>
+           
           }
         />
          <Route
@@ -315,6 +320,7 @@ const App = () => {
               <AdminDashboardWithdraw />
             </ProtectedAdminRoute>
           }
+          
         />
       </Routes>
       <ToastContainer

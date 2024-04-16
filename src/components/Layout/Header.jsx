@@ -57,7 +57,7 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-            <b className="text-[#000] flex items-center text-[20px] mt-3 cursor-pointer">
+            <b className="text-[#000] flex items-center text-[40px] mt-3 cursor-pointer">
                     Kala
               </b>
             </Link>

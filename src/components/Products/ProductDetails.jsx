@@ -139,10 +139,11 @@ const ProductDetails = ({ data }) => {
                           onClick={() => setSelect(index)}
                         />
                       </div>
+                      
                     ))}
                   <div
                     className={`${
-                      select === 1 ? "border" : "null"
+                      select === 2 ? "border" : "null"
                     } cursor-pointer`}
                   ></div>
                 </div>

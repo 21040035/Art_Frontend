@@ -14,7 +14,7 @@ const HomePage = () => {
         <Header activeHeading={1} />
         <Hero />
         <Categories />
-        <FeaturedProduct />
+        <FeaturedProduct/>
         <BestDeals />
         <Events />
         <Sponsored />

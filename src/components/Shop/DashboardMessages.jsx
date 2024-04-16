@@ -206,7 +206,7 @@ const DashboardMessages = () => {
   }, [messages]);
 
   return (
-    <div className="w-[90%] bg-white m-5 h-[85vh] overflow-y-scroll rounded">
+    <div className="w-[90%] bg-[#fff] m-5 h-[85vh] overflow-y-scroll rounded">
       {!open && (
         <>
           <h1 className="text-center text-[30px] py-3 font-Poppins">
@@ -288,7 +288,7 @@ const MessageList = ({
   return (
     <div
       className={`w-full flex p-3 px-3 ${
-        active === index ? "bg-[#00000010]" : "bg-transparent"
+        active === index ? "bg-[#5926e410]" : "bg-transparent"
       }  cursor-pointer`}
       onClick={(e) =>
         setActive(index) ||
@@ -305,7 +305,7 @@ const MessageList = ({
           className="w-[50px] h-[50px] rounded-full"
         />
         {online ? (
-          <div className="w-[12px] h-[12px] bg-green-400 rounded-full absolute top-[2px] right-[2px]" />
+          <div className="w-[12px] h-[12px] bg-blue-400 rounded-full absolute top-[2px] right-[2px]" />
         ) : (
           <div className="w-[12px] h-[12px] bg-[#c7b9b9] rounded-full absolute top-[2px] right-[2px]" />
         )}
@@ -338,7 +338,7 @@ const SellerInbox = ({
   return (
     <div className="w-full min-h-full flex flex-col justify-between">
       {/* message header */}
-      <div className="w-full flex p-3 items-center justify-between bg-slate-200">
+      <div className="w-full flex p-3 items-center justify-between bg-slate-500">
         <div className="flex">
           <img
             src={`${userData?.avatar?.url}`}
@@ -385,7 +385,7 @@ const SellerInbox = ({
                   <div>
                     <div
                       className={`w-max p-2 rounded ${
-                        item.sender === sellerId ? "bg-[#000]" : "bg-[#38c776]"
+                        item.sender === sellerId ? "bg-[#6440e4]" : "bg-[#000]"
                       } text-[#fff] h-min`}
                     >
                       <p>{item.text}</p>
